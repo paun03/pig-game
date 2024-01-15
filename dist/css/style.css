@@ -3,7 +3,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Nunito", sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 body {
@@ -42,6 +42,7 @@ main .playerScore {
 }
 main .playerScore h1 {
   font-size: 48px;
+  font-weight: 700;
 }
 main .playerScore p {
   font-size: 72px;
@@ -74,7 +75,7 @@ main button {
   border-radius: 20px;
   background-color: hsla(0, 0%, 100%, 0.8);
   cursor: pointer;
-  transition: background-color 0.5s ease;
+  transition: 0.5s ease;
 }
 main button:hover {
   background-color: hsl(0, 0%, 100%);
@@ -100,4 +101,8 @@ main .playerOnTurn {
 }
 main .playerOffTurn {
   background-color: rgba(255, 255, 255, 0.2);
+}
+main .playerOffFont {
+  font-weight: 400 !important;
+  opacity: 0.8;
 }/*# sourceMappingURL=style.css.map */
