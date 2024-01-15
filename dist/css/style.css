@@ -22,7 +22,7 @@ main {
   width: 80rem;
   display: flex;
   justify-content: center;
-  box-shadow: 1px 1px 100px;
+  box-shadow: 1px 1px 100px 1px rgba(0, 0, 0, 0.3);
   border-radius: 20px;
   position: relative;
   overflow: hidden;
@@ -46,22 +46,25 @@ main .playerScore h1 {
 main .playerScore p {
   font-size: 72px;
   margin-top: 12px;
+  color: #c7365f;
 }
 main .current {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-bottom: 120px;
-  background-color: aqua;
+  background-color: #c7365f;
   padding: 24px 72px;
   border-radius: 16px;
 }
 main .current h4 {
   font-size: 20px;
   margin-bottom: 12px;
+  color: white;
 }
 main .current p {
   font-size: 36px;
+  color: white;
 }
 main button {
   position: absolute;
@@ -69,10 +72,16 @@ main button {
   font-size: 20px;
   border: 0;
   border-radius: 20px;
+  background-color: hsla(0, 0%, 100%, 0.8);
+  cursor: pointer;
+  transition: background-color 0.5s ease;
+}
+main button:hover {
+  background-color: hsl(0, 0%, 100%);
 }
 main img {
   position: absolute;
-  box-shadow: 1px 1px 100px;
+  box-shadow: 1px 1px 100px 1px rgba(0, 0, 0, 0.3);
   top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -84,8 +93,11 @@ main #btn-hold {
   bottom: 120px;
 }
 main #btn-roll {
-  bottom: 202px;
+  bottom: 212px;
 }
 main .playerOnTurn {
-  background-color: argb(255, 255, 255, 0.4);
+  background-color: rgba(255, 255, 255, 0.4);
+}
+main .playerOffTurn {
+  background-color: rgba(255, 255, 255, 0.2);
 }/*# sourceMappingURL=style.css.map */

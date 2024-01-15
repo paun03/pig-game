@@ -9,7 +9,7 @@ main {
     width: 80rem;
     display: flex;
     justify-content: center;
-    box-shadow: 1px 1px 100px;
+    box-shadow: 1px 1px 100px 1px rgba(0, 0, 0, 0.3);
     border-radius: 20px;
     position: relative;
     overflow: hidden;
@@ -35,6 +35,7 @@ main {
         p {
             font-size: 72px;
             margin-top: 12px;
+            color: #c7365f;
         }
     }
 
@@ -43,17 +44,19 @@ main {
         flex-direction: column;
         align-items: center;
         margin-bottom: 120px;
-        background-color: aqua;
+        background-color: #c7365f;
         padding: 24px 72px;
         border-radius: 16px;
 
         h4 {
             font-size: 20px;
             margin-bottom: 12px;
+            color: white;
         }
 
         p {
             font-size: 36px;
+            color: white;
         }
     }
 
@@ -63,11 +66,17 @@ main {
         font-size: 20px;
         border: 0;
         border-radius: 20px;
+        background-color: hsla(0, 0%, 100%, 0.8);
+        cursor: pointer;
+        transition: background-color 0.5s ease;
     }
-
+    
+    button:hover {
+        background-color: hsla(0, 0%, 100%, 1); 
+    }
     img {
         position: absolute;
-        box-shadow: 1px 1px 100px;
+        box-shadow: 1px 1px 100px 1px rgba(0, 0, 0, 0.3);
         top: 40%;
         left: 50%;
         transform: translate(-50%, -50%);
@@ -82,10 +91,15 @@ main {
     }
 
     #btn-roll {
-        bottom: 202px;
+        bottom: 212px;
     }
 
     .playerOnTurn {
-        background-color: argb(255, 255, 255, 0.4);
+        background-color: rgba(255, 255, 255, 0.4);
     }
+
+    .playerOffTurn {
+        background-color: lighten(rgba(255, 255, 255, 0.2), 0.1);
+    }
+    
 }
