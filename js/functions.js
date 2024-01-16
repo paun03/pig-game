@@ -51,4 +51,25 @@ let playerTwoScore = (value) => {
     return value;
 };
 
-export {counterPlayerOneCurrent, rollADice, playerOneCurrent, playerOneCurrentReset, playerTwoCurrent, playerTwoCurrentReset, playerOneScore, playerTwoScore};
+let playerOneContainerColorSwitchOnTurn = () => {
+    Selector.playerOneContainer.classList.add("playerOnTurn");
+    Selector.playerOneContainer.classList.remove("playerOffTurn");
+};
+
+let playerOneContainerColorSwitchOffTurn = () => {
+    Selector.playerOneContainer.classList.add("playerOffTurn");
+    Selector.playerOneContainer.classList.remove("playerOnTurn");
+};
+
+let playerTwoContainerColorSwitchOnTurn = () => {
+    Selector.playerTwoContainer.classList.add("playerOnTurn");
+    Selector.playerTwoContainer.classList.remove("playerOffTurn");
+};
+
+let playerTwoContainerColorSwitchOffTurn = () => {
+    Selector.playerTwoContainer.classList.add("playerOffTurn");
+    Selector.playerTwoContainer.classList.remove("playerOnTurn");
+};
+
+
+export {counterPlayerOneCurrent, rollADice, playerOneCurrent, playerOneCurrentReset, playerTwoCurrent, playerTwoCurrentReset, playerOneScore, playerTwoScore, playerOneContainerColorSwitchOnTurn, playerOneContainerColorSwitchOffTurn, playerTwoContainerColorSwitchOnTurn, playerTwoContainerColorSwitchOffTurn}

@@ -14,6 +14,10 @@ main {
     position: relative;
     overflow: hidden;
 
+    #playerOneContainer, #playerTwoContainer {
+        transition: ease-in 1s;
+    }
+
     .containerDivMain {
         width: 100%;
         display: flex;
@@ -96,16 +100,20 @@ main {
     }
 
     .playerOnTurn {
-        background-color: rgba(255, 255, 255, 0.4);
+        background-color: rgba(255, 255, 255, 0.4) !important;
     }
 
     .playerOffTurn {
-        background-color: lighten(rgba(255, 255, 255, 0.2), 0.1);
+        background-color: rgba(255, 255, 255, 0.2) !important;
     }
     
     .playerOffFont {
         font-weight: 400 !important;
         opacity: 0.8;
+    }
+
+    .playerWon {
+        background-color: yellowgreen;
     }
 
 }
